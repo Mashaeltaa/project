@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project tryouts</title>
+    <title>New Driver</title>
+
+    <!-- <style> label { width: 200px; float: left; margin: 0 20px 0 0; }
+            span { display: block; margin: 0 0 3px; font-size: 1.2em; font-weight: bold; }
+            input { width: 200px; border: 1px solid #000; padding: 5px; }
+    </style> -->
 </head>
+
 <body>
-    <h1> hello </h1>
-    <h4> <FONT COLOR="Blue"> how  you</FONT> </h4>
-    <h1> hi </h1>
-    <h1> hello </h1>
+    <form>
+    <p> <B>Driver Information</B></p>
+    <label for="name">Full Name</label><br>
+    <input type="text" id="name" name="name"><br>
+    <br> 
+    <label for="id" style="width: 400px;">ID (Iqama or National Number)</label><br> 
+    <input type="text" id="id" name="id"><br>
+    <br> 
+    <label for="phone">Phone Number</label>  <label for="dob">Date of Birth</label> <br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <input type="date" id="dob" name="dob"> <br>
+    <br>
+    <lable for="licenseNo">License Number</lable> <br>
+    <input type="text" id="licenseNo" name="licenseNo" pattern=""> <br>
+    <br>
+    <lable for="nationality">Nationality</lable>  <lable for="availability"> Availability</lable><br>
+    <select name="nationality" id="nationality"> <!-- should be in an alphabetical order -->
+        <option value="Saudi">Saudi</option>
+        <option value="saab">Pakistani</option>
+        <option value="opel">Indian</option>
+        <option value="audi">Egyptian</option>
+    </select> 
+      <lable for ="available"> Available </lable> <input type="checkbox" id="ava" name="ava" ><br>
+    <br>
+    <lable> Medical Records</lable> <br> 
+    <form action="/upload" method="post" enctype="multipart/form-data"> 
+        <input type="file" id="pdfFile" name="pdfFile" accept=".pdf">
+        <!-- <button type="submit">Upload</button> -->
+    </form>
+
+
+
+   </form>
+   
+    
+
+
+
 </body>
 </html>
